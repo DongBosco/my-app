@@ -41,12 +41,21 @@ const persistConfig = {
   storage,
 };
 
+<<<<<<< HEAD
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 const store = createStore(persistedReducer);
 // const store = createStore(reducer, initialState);
 
 const persitor = persistStore(store);
+=======
+// const persistedReducer = persistReducer(persistConfig, reducer);
+
+// const store = createStore(persistedReducer);
+const store = createStore(reducer);
+
+// const persitor = persistStore(store);
+>>>>>>> 26e464c1e20558ade239f4cee749f6bc3f753bdd
 
 function App() {
   return (
